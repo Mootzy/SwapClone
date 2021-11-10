@@ -76,10 +76,12 @@ const StarsWrapper = styled.div`
 `
 
 const imagePath = '/images/home/lunar-bunny/'
-const imageSrc = 'bunny'
+const catImgPath = '/images/home/babydinger/'
+const imageSrc = 'dinger'
 
 const starsImage: CompositeImageProps = {
-  path: '/images/home/lunar-bunny/',
+  // path: '/images/home/lunar-bunny/',
+  path: '/images/home/babydinger/',
   attributes: [
     { src: 'star-l', alt: '3D Star' },
     { src: 'star-r', alt: '3D Star' },
@@ -107,15 +109,15 @@ const Hero = () => {
       >
         <Flex flex="1" flexDirection="column">
           <Heading scale="xxl" color="secondary" mb="24px">
-            {t('The moon is made of pancakes.')}
+            {t('The cat is out of the bag.')}
           </Heading>
           <Heading scale="md" mb="24px">
-            {t('Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.')}
+            {t('Welcome to Baby Schrödinger Elon Musk named his cat after Erwin Schrödinger who was a Nobel Prize-winning physicist. Baby Dinger is aiming to be the cat lovers meme. This is a community-driven project, with an experienced team to make this just Purrfect for all crypto meme lovers who love Floki (my brother) & Dogecoin “dads favorite”.Trade, earn, and win crypto on the most fairest decentralized platform within the quantumverse.')}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}
             <Link to="/swap">
-              <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade Now')}</Button>
+              <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade')}</Button>
             </Link>
           </Flex>
         </Flex>
@@ -127,7 +129,7 @@ const Hero = () => {
           position="relative"
         >
           <BunnyWrapper>
-            <img src={`${imagePath}${imageSrc}.png`} srcSet={getSrcSet(imagePath, imageSrc)} alt={t('Lunar bunny')} />
+            <img src={`${catImgPath}${imageSrc}.png`} srcSet={getSrcSet(catImgPath, imageSrc)} alt={t('baby dinger')} />
           </BunnyWrapper>
           <StarsWrapper>
             <CompositeImage {...starsImage} />

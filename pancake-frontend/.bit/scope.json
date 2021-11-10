@@ -1,0 +1,9 @@
+{
+    "name": "pancake-frontend",
+    "remotes": {},
+    "version": "1.0.172",
+    "lanes": {
+        "current": "main",
+        "tracking": []
+    }
+}
